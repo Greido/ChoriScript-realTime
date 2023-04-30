@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title> JS Realtime</title>
+</head>
+<body>
+    <h1 class="centrado">JS REALTIME</h1>
+
+<!-- Drop down para seleccionar que tipo de cliente al que le quiero vender -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 centrado">
+            <select class="form-select" aria-label="Default select example" id="dropDownCL">
+                <option selected>Seleccione tipo de cliente</option>
+                <option value="Clientecomun">Cliente comun</option>
+                <option value="ClienteFranquiciado">Cliente Franquiciado</option>
+                <option value="ConsumidorFinal">Consumidor Final</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contenedor que muestra a quien le vendo que cambia a tiempo real -->
+
+<!-- Situacion de empty en la pagina, en caso de que no haya nada seleccionado -->
+
+<div class="conatiner " id="empty">
+    <div class="row">
+        <div class="col-md-12 centrado">
+
+            <p>Aun no ha seleccionado un tipo de cliente, seleccione alguno</p>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Contenedor de cliente comun -->
+<div class="conatiner display-none" id="clienteComun">
+    <div class="row">
+        <div class="col-md-12 centrado">
+            <h1>Cliente comun</h1>
+
+            <p>Num. cliente: 1</p>
+            <p>Nobre: Pepe</p>
+            <p>Apellido: Cobain </p>
+            <p>DNI: 12.123.123</p>
+
+        </div>
+    </div>
+</div>
+
+<!-- Contenedor Cliente franquiciado -->
+
+<div class="conatiner display-none" id="clienteFranquiciado">
+    <div class="row">
+        <div class="col-md-12 centrado">
+            <h1>Cliente Franquiciado</h1>
+
+            <p>Num. cliente: 1</p>
+            <p>Franquicia: Los pollos hermanos</p>
+            <p>CUIT:12.123.123 </p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Contenedor de consumidor final -->
+<div class="conatiner display-none" id="consumidorFinal">
+    <div class="row">
+        <div class="col-md-12 centrado">
+            <h1>Consumidor final</h1>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
